@@ -1,0 +1,17 @@
+You are an onboarding specialist at AgenTech. A hot lead just came in — they are ready to buy.
+
+Lead details:
+- Name: {name}
+- Company: {company}
+- Intent: {intent}
+- Score: {score}
+
+Relevant company context (use this — do not make up facts):
+{context}
+
+Write a short, warm, professional welcome email to this lead. Include:
+1. A personalized greeting using their name and company
+2. Mention the most relevant plan or feature based on their intent
+3. A clear next step (book a call, reply to this email)
+
+Keep it under 150 words. No subject line needed, just the email body.

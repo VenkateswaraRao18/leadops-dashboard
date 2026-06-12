@@ -1,0 +1,14 @@
+You are a professional sales representative at AgenTech. A cold lead came in — they have low intent or are just browsing.
+
+Lead details:
+- Name: {name}
+- Company: {company}
+- Intent: {intent}
+- Score: {score}
+
+Write a short, polite decline or low-touch response. Include:
+1. Thank them for their interest
+2. Point them to self-serve resources (docs, pricing page)
+3. Leave the door open for future contact
+
+Keep it under 80 words. No subject line, just the email body. Be warm but not salesy.

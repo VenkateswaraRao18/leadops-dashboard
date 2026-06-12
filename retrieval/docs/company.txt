@@ -1,0 +1,37 @@
+## Company Overview
+We are AgenTech, a B2B SaaS company that builds AI-powered automation tools for enterprise sales teams.
+Our platform helps companies automate lead qualification, onboarding, and customer follow-up using AI agents.
+Founded in 2023, we serve over 500 enterprise customers globally.
+
+## Pricing
+- Starter Plan: $99/month — up to 5 users, 500 leads/month, basic reporting
+- Growth Plan: $299/month — up to 25 users, 5000 leads/month, advanced analytics, CRM integrations
+- Enterprise Plan: $999/month — unlimited users, unlimited leads, custom integrations, dedicated support, SLA guarantee
+- Annual discount: 20% off all plans when billed annually
+- Minimum contract for Enterprise: 12 months
+- Custom pricing available for 100+ seat deals — contact sales@agentech.ai
+
+## Product Features
+- AI lead scoring and qualification
+- Automated onboarding workflows
+- CRM integrations (HubSpot, Salesforce, Attio)
+- Calendar booking automation (Google Calendar, Calendly)
+- Email automation (personalized sequences)
+- RAG-powered knowledge base for support agents
+- Real-time analytics dashboard
+- Compliance: SOC2 Type II certified, GDPR compliant
+
+## Onboarding Process
+1. Account setup and CRM integration (Day 1)
+2. Knowledge base ingestion — upload your docs, FAQs, pricing (Day 1-2)
+3. Agent configuration and prompt tuning (Day 2-3)
+4. Test runs with synthetic leads (Day 3-4)
+5. Go-live with human approval gates enabled (Day 5)
+6. Dedicated CSM assigned for first 90 days
+
+## Support
+- Starter: email support, 48-hour response
+- Growth: email + chat support, 24-hour response
+- Enterprise: dedicated Slack channel, 4-hour SLA, 24/7 on-call
+- Documentation: docs.agentech.ai
+- Status page: status.agentech.ai

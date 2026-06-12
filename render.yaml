@@ -28,8 +28,6 @@ services:
   - type: web
     name: leadops-dashboard
     env: static
-    region: oregon
-    plan: free
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: out

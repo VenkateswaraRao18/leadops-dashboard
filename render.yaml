@@ -4,6 +4,7 @@ services:
     env: python
     region: oregon
     plan: free
+    rootDir: .
     buildCommand: pip install -r requirements.txt
     startCommand: bash start.sh
     envVars:
@@ -22,6 +23,18 @@ services:
       - key: LANGFUSE_HOST
         value: https://cloud.langfuse.com
       - key: ALLOWED_ORIGINS
+        sync: false
+
+  - type: web
+    name: leadops-dashboard
+    env: static
+    region: oregon
+    plan: free
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: out
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
         sync: false
 
 databases:

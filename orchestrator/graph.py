@@ -4,8 +4,7 @@ from agents.intake import intake_node
 from agents.routing import routing_node, route_condition
 from agents.onboarding import onboarding_node
 from agents.content import content_node
-from memory.store import load_memory, save_memory
-from memory.summarizer import summarize_interaction
+from memory.engram_client import load_context, save_interaction
 
 
 def memory_load_node(state: dict) -> dict:
@@ -14,12 +13,12 @@ def memory_load_node(state: dict) -> dict:
 
     email = lead_state.raw_lead.get("email")
     if email:
-        existing = load_memory(email)
-        if existing:
-            lead_state.memory = existing
+        context = load_context(email)
+        if context:
+            lead_state.memory = {"summary": context}
             lead_state.is_returning_customer = True
             print(f"[memory] returning customer: {email}")
-            print(f"[memory] previous summary: {existing['summary']}")
+            print(f"[memory] context: {context[:120]}...")
         else:
             print(f"[memory] new customer: {email}")
 
@@ -34,9 +33,7 @@ def memory_save_node(state: dict) -> dict:
     if not email:
         return lead_state.model_dump()
 
-    existing_summary = lead_state.memory.get("summary") if lead_state.memory else None
-
-    summary = summarize_interaction(existing_summary, {
+    save_interaction(email, {
         "name": lead_state.name,
         "company": lead_state.company,
         "intent": lead_state.intent,
@@ -45,9 +42,6 @@ def memory_save_node(state: dict) -> dict:
         "status": lead_state.status,
         "date": datetime.now().strftime("%Y-%m-%d"),
     })
-
-    save_memory(email, summary)
-    print(f"[memory] updated summary: {summary}")
 
     return lead_state.model_dump()
 

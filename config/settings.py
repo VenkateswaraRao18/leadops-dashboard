@@ -11,3 +11,6 @@ POSTGRES_URL = os.getenv("POSTGRES_URL", "postgresql://postgres:postgres@localho
 LANGFUSE_PUBLIC_KEY = os.getenv("LANGFUSE_PUBLIC_KEY")
 LANGFUSE_SECRET_KEY = os.getenv("LANGFUSE_SECRET_KEY")
 LANGFUSE_HOST = os.getenv("LANGFUSE_HOST", "https://cloud.langfuse.com")
+
+ENGRAM_API_KEY = os.getenv("ENGRAM_API_KEY")
+ENGRAM_BASE_URL = os.getenv("ENGRAM_BASE_URL", "https://engram-api-venky.fly.dev")
